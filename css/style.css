@@ -81,7 +81,7 @@ section li {
   transition: opacity 0.5s ease-in-out;
 }
 body {
-  background-color: #fdfdca;
+  background-color: #fefee0;
 }
 
 section#experience li,
@@ -98,9 +98,9 @@ section#experience li {
 }
 
 section#projects li {
-  background-color: #d0f9ec;
+  background-color: #fdeed0;
 }
 
 section#skills li {
-  background-color: #ecd0f9;
+  background-color: #fdf0d0;
 }
