@@ -1,28 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let sectionList = document.querySelectorAll("section");
+document.addEventListener('DOMContentLoaded', function () {
+  let items = document.querySelectorAll('section li');
 
-  function fadeIn(item, index) {
-    setTimeout(function () {
-      item.style.opacity = "1";
-    }, 150 * index);
+  function fadeInOnScroll() {
+    let windowHeight = window.innerHeight;
+    items.forEach(function (item, index) {
+      let itemPosition = item.getBoundingClientRect().top;
+      if (itemPosition <= windowHeight - 50) {
+        setTimeout(function () {
+          item.style.opacity = '1';
+        }, 150 * index);
+      }
+    });
   }
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const items = entry.target.querySelectorAll("li");
-          items.forEach(fadeIn);
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.1,
-    }
-  );
-
-  sectionList.forEach((section) => {
-    observer.observe(section);
-  });
+  window.addEventListener('scroll', fadeInOnScroll);
+  fadeInOnScroll();
 });
