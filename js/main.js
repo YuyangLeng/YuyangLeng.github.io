@@ -16,3 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', fadeInOnScroll);
   fadeInOnScroll();
 });
+
+$(document).ready(function () {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+});
