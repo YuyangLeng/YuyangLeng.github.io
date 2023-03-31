@@ -81,3 +81,13 @@ section li {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+  background-color: #f5f5dc;
+}
+
+section#experience li {
+  background-color: #f9ecd0;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
