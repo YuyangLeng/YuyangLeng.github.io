@@ -81,6 +81,7 @@ section li {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+body {
   background-color: #f5f5dc;
 }
 
