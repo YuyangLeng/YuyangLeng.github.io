@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body {
-  background-color: #f5f5dc;
-}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,6 +11,7 @@ body {
     background-image: url('../images/background.jpg');
     background-size: cover;
 }
+
 header {
     padding: 20px;
     background: #333;
@@ -75,7 +74,6 @@ footer {
     color: #fff;
     font-size: 14px;
 }
-
 /* Add the following styles to the existing CSS */
 
 section li {
