@@ -76,17 +76,27 @@ section li {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-section#experience li {
-  background-color: #f9ecd0;
+body {
+  background-color: #fdfdca;
+}
+
+section#experience li,
+section#projects li,
+section#skills li {
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
 }
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-image: url('../images/background.jpg');
-    background-size: cover;
+
+section#experience li {
+  background-color: #f9ecd0;
+}
+
+section#projects li {
+  background-color: #d0f9ec;
+}
+
+section#skills li {
+  background-color: #ecd0f9;
 }
