@@ -78,6 +78,6 @@ footer {
 /* Add the following styles to the existing CSS */
 
 section li {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
